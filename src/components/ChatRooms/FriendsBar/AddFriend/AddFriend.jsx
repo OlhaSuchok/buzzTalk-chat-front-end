@@ -11,7 +11,7 @@ export default function AddFriend() {
   useEffect(() => {
     const getUsers = async () => {
       const { data } = await axios.get(
-        "https://buzz-talk-api.onrender.com/api/accounts/users/"
+        "/backend/api/accounts/users/"
 
       );
       // const { data } = await axios.get(

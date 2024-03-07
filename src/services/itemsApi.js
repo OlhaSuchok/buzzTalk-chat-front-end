@@ -13,7 +13,7 @@ axios.defaults.baseURL = `${BASE_URL}/api/accounts`;
 
 export const fetchUsers = async (token, username) => {
   const { data } = await axios.get(
-    `https://buzz-talk-api.onrender.com/chat/?username=${username}`,
+    `/backend/chat/?username=${username}`,
     {
       headers: {
         Authorization: `Bearer ${token}`,
